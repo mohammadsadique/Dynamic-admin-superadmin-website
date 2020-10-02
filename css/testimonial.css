@@ -1,0 +1,63 @@
+.testimonial-section{
+  float: left;
+  width: 100%;
+  background: #eaeaea;
+  padding-top: 35px;
+}
+
+
+.quote {
+  background: #fff;
+  padding: 15px 20px 5px 30px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  border-top: 5px solid #1b87e0;
+}
+.quote p{
+  color: #000;
+}
+
+.quote:after {
+  content: '';
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 20px 18px 0 18px;
+  border-color: #fff transparent transparent transparent;
+  position: relative;
+  top: 41px;
+  left: 20px;
+}
+
+.student {
+  margin-left: 25px;
+  margin-bottom: 35px;
+}
+
+.student .photo {
+  background-color: #999696;
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin-right: 10px;
+}
+
+.student p {
+  position: relative;
+  top: 5px;
+  text-transform: uppercase;
+  color: #0062b2;
+}
+
+.student p:nth-child(2) {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.student p:nth-child(3) {
+  font-size: 14px;
+  color: #000;
+}
+

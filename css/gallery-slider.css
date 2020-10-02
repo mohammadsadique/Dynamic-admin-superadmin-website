@@ -1,0 +1,48 @@
+
+
+.filter-button-group {
+  padding: 15px;
+}
+
+.btn.btn-default {
+  padding: 1rem 0;
+  font-size: 1.7rem;
+  background-color: #147979;
+  border-color: #373739;
+  border-radius: 0;
+}
+.btn.btn-default:hover, .btn.btn-default:active, .btn.btn-default:focus, .btn.btn-default.is-checked {
+  background-color: #093737;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.thumbnail {
+  border-radius: 0px;
+  border: 0px;
+  padding: 0px;
+}
+
+a.pp_play,
+a.pp_arrow_previous,
+a.pp_arrow_next,
+a.pp_close {
+  display: none;
+}
+
+.pp_social .twitter {
+  float: left;
+  width: 60px;
+}
+
+.pp_social .facebook {
+  float: left;
+  margin-left: 15px;
+  width: 80px;
+  overflow: hidden;
+}
+
+.pp_nav {
+  margin-top: 0;
+}

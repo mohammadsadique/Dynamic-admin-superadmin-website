@@ -27,7 +27,7 @@
             <li><a href="#contact">Contact</a></li>
             <li><a href="#enquiry">Enquiry</a></li>            
             <li><a href="#enquiry">Feedback</a></li>            
-            <li><a class="career" href="registration.php" >Registration</a></li>  
+            <li><a href="registration.php" >Registration</a></li>  
             <li><a href="login.php">Login</a></li>    
             <?php
             if($userId != '')

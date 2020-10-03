@@ -15,7 +15,7 @@
             <h4 class="general-features">Timing</h4>
             <ul class="general-features">
                 <?php
-                $vv1 = "SELECT * FROM `tc_officetime`";
+                $vv1 = "SELECT * FROM `tc_officetime` WHERE `login_id` = '$domain_id'";
                 $tt1 = mysqli_query($conn,$vv1);
                 while($nn1 = mysqli_fetch_array($tt1)){
                     ?>		
@@ -27,8 +27,8 @@
         <div class="col-md-4 col-xs-12 col-sm-3">
             <h4 class="social-link">Contact</h4>
             <ul class="social-network social-links">
-                <li><a href="#index.php" target="_blank"><i class="fa fa-facebook"></i>Facebook</a></li>
-                <li><a href="#https://www.youtube.com/channel/UCbnmxY6AQajXMr8yaKEOT5g" target="_blank"><i class="fa fa-youtube-play"></i>Youtube</a></li>
+                <li><a href="<?php echo $headerPTQ['facebook']; ?>" target="_blank"><i class="fa fa-facebook"></i>Facebook</a></li>
+                <li><a href="<?php echo $headerPTQ['youtube']; ?>" target="_blank"><i class="fa fa-youtube-play"></i>Youtube</a></li>
             </ul>
         </div>
 </div>

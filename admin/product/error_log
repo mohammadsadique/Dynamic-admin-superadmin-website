@@ -1,0 +1,5 @@
+[03-Oct-2020 08:36:47 UTC] PHP Notice:  Undefined index: name in /home/ympydhqo6ttd/public_html/sadik.tcsoftwareonline.com/admin/product/productenquiry.php on line 43
+[03-Oct-2020 08:36:47 UTC] PHP Notice:  Undefined index: mobile in /home/ympydhqo6ttd/public_html/sadik.tcsoftwareonline.com/admin/product/productenquiry.php on line 44
+[03-Oct-2020 08:36:47 UTC] PHP Notice:  Undefined index: email in /home/ympydhqo6ttd/public_html/sadik.tcsoftwareonline.com/admin/product/productenquiry.php on line 45
+[03-Oct-2020 08:42:39 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/ympydhqo6ttd/public_html/sadik.tcsoftwareonline.com/admin/product/productenquiry.php on line 48
+[03-Oct-2020 08:43:05 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/ympydhqo6ttd/public_html/sadik.tcsoftwareonline.com/admin/product/productenquiry.php on line 48

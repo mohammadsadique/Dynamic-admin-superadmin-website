@@ -1,4 +1,4 @@
-<?php session_start(); include '../superadmin/dbconnect.php';
+<?php session_start(); include '../dbconnect.php';
 	if(isset($_POST['signin']))
 	{
 		$user_id = $_POST['user_id'];

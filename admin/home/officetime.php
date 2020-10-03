@@ -61,7 +61,7 @@ if(isset($_POST['update']))
 							<div class="col-md-12">
 								<div class="form-group">
 									<label for="exampleInputEmail1">Type Timming</label>
-									<textarea name="tc_news" class="form-control" rows="3" placeholder="Enter News..."><?php if($id != ''){ echo $qq['tc_news']; } ?></textarea>
+									<textarea name="tc_news" class="form-control" rows="3" placeholder="Enter Here..."><?php if($id != ''){ echo $qq['tc_news']; } ?></textarea>
 								</div>  
 							</div>
 							<div class="col-md-12"></div>

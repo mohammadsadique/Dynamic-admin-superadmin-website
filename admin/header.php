@@ -1,4 +1,4 @@
-<?php session_start(); include('../../superadmin/dbconnect.php');
+<?php session_start(); include('../../dbconnect.php');
 	require('../../function/function.php');
 if(!empty($_SESSION['id'])){}
 else
@@ -174,6 +174,22 @@ else
 					<li <?php if( $a == $b.'/enquiry.php' ){ echo "class='active'"; }?>>
 						<a href="../home/enquiry.php">
 							<i class="fa fa-question-circle" aria-hidden="true"></i> <span>Enquiry</span>
+							<span class="pull-right-container">
+								<small class="label pull-right bg-green"></small>
+							</span>
+						</a>
+					</li>
+					<li <?php if( $a == $b.'/userregistration.php' ){ echo "class='active'"; }?>>
+						<a href="../home/userregistration.php">
+							<i class="fa fa-users" aria-hidden="true"></i> <span>User Registration</span>
+							<span class="pull-right-container">
+								<small class="label pull-right bg-green"></small>
+							</span>
+						</a>
+					</li>
+					<li <?php if( $a == $b.'/productenquiry.php' ){ echo "class='active'"; }?>>
+						<a href="../product/productenquiry.php">
+							<i class="fa fa-product-hunt" aria-hidden="true"></i> <span>User Product Enquiry</span>
 							<span class="pull-right-container">
 								<small class="label pull-right bg-green"></small>
 							</span>

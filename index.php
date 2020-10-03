@@ -153,7 +153,7 @@
                         <div class="contact" data-aos="zoom-in">
                             <i class="fa fa-envelope"></i>
                             <h4 class="email">Email</h4>
-                            <a href="mailto:<?php echo $headerPTQ['emaill']; ?>"><?php echo $headerPTQ['email']; ?></a>
+                            <a href="mailto:"><?php echo $headerPTQ['email']; ?></a>
                         </div>
                     </div>
                     <div class="col-md-4 col-xs-6">

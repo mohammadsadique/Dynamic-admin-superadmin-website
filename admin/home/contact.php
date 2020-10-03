@@ -11,7 +11,7 @@ if(isset($_POST['sub']))
 	$your_img = $_FILES['your_img']['name'];
 	$your_imgtt = time().'_'.$_FILES['your_img']['name'];
 
-	$tt51 = "SELECT * FROM `tc_contact`";
+	$tt51 = "SELECT * FROM `tc_contact` WHERE `login_id` = '$_SESSION[id]'";
 	$ee51 = mysqli_query($conn,$tt51);
 	$count = mysqli_num_rows($ee51);
 	if($count < 1){
@@ -84,12 +84,12 @@ if(isset($_POST['sub']))
 if(isset($_POST['del'])){
 	$id = $_POST['del'];
 	//unlink image from server
-    $tt5 = "SELECT * FROM `tc_contact` WHERE `id` = '$id'";
+    $tt5 = "SELECT * FROM `tc_contact` WHERE `id` = '$id' AND `login_id` = '$_SESSION[id]'";
     $ee5 = mysqli_query($conn,$tt5);
     $qq5 = mysqli_fetch_array($ee5);
 	unlink('../../images/'.$qq5['logo']);
 	
-	$tt = "DELETE FROM `tc_contact` WHERE `id` = '$id'";
+	$tt = "DELETE FROM `tc_contact` WHERE `id` = '$id' AND `login_id` = '$_SESSION[id]'";
 	mysqli_query($conn,$tt);
 
 	echo "<script>alert('Deleted successfully!');</script>";
@@ -97,7 +97,7 @@ if(isset($_POST['del'])){
 }
 if(isset($_POST['upd'])){
 	$id = $_POST['upd'];
-	$tt = "SELECT * FROM `tc_contact` WHERE `id` = '$id'";
+	$tt = "SELECT * FROM `tc_contact` WHERE `id` = '$id' AND `login_id` = '$_SESSION[id]'";
 	$ee = mysqli_query($conn,$tt);
 	$qq = mysqli_fetch_array($ee);
 }else{

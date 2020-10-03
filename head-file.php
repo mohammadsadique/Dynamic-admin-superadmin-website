@@ -1,21 +1,32 @@
-<?php include('superadmin/dbconnect.php');  session_start(); require('function/function.php');
-    $domain_id = '29';
+<?php include('dbconnect.php');  session_start(); require('function/function.php'); 
+
+    $protocol = isset($_SERVER["HTTPS"]) ? 'https://' : 'http://';
+    $serverName = $_SERVER['SERVER_NAME'];
+    $rootURL = $protocol.$serverName;
+    
+    $qw = "SELECT * FROM `add_customer` WHERE `website` = '$rootURL'";
+	$er = mysqli_query($conn,$qw);
+    $tty = mysqli_fetch_array($er);
+    
+    
+    $domain_id = $tty['login_id'];
+    if($domain_id == ''){
+        echo '<h2>Comming Soon...</h2>'; die;
+    }
+
    
     $headerP = "SELECT * FROM `tc_contact` WHERE `login_id` = '$domain_id'";
     $headerPT = mysqli_query($conn,$headerP);
     $headerPTQ = mysqli_fetch_array($headerPT);
     
-
-    $wep = "SELECT * FROM `user_registration` WHERE `id` = '$_SESSION[id]'";
+    $userId = !empty($_SESSION['id']) ? $_SESSION['id'] : '';
+    $wep = "SELECT * FROM `user_registration` WHERE `id` = '$userId'";
 	$we2p = mysqli_query($conn,$wep);
     $webp = mysqli_fetch_array($we2p);
     
-    $userId = $_SESSION['id'];
-
+   
     
-    $qw = "SELECT * FROM `add_customer` WHERE `login_id` = '$domain_id'";
-	$er = mysqli_query($conn,$qw);
-    $tty = mysqli_fetch_array($er);
+    
    
    
 ?>
